@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <style>
+      .box {
+        width: 400px;
+        height: 400px;
+        box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.3);
+        margin: auto;
+        border-radius: 1%;
+        background-image: repeating-linear-gradient(
+          to top right,
+          #ffffff 0px,
+          #ffffff 16px,
+          #000000 16px,
+          #000000 19px
+        );
+      }
+
+      .container {
+        width: 260px;
+        height: 260px;
+        background-color: rgb(53, 53, 53);
+        border-radius: 3px;
+        position: relative;
+        margin: auto;
+        top: 50%;
+        transform: translateY(-50%);
+        box-shadow: 10px 10px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .triangle {
+        width: 150px;
+        height: 150px;
+        position: relative;
+        margin: auto;
+        top: 50%;
+        transform: translateY(-50%);
+      }
+
+      .dark {
+        background-color: rgb(170, 170, 170);
+        transition: all 0.8s;
+      }
+
+      .middle {
+        background-color: rgb(204, 204, 204);
+        transition: all 0.8s;
+      }
+
+      .light {
+        background-color: rgb(238, 238, 238);
+        transition: all 0.8s;
+      }
+
+      .triangle .left-top {
+        width: 23px;
+        height: 123px;
+        transform: rotate(40deg) skew(10deg, 15deg);
+        position: absolute;
+        top: 11px;
+        left: 26px;
+      }
+
+      .right-bottom {
+        width: 17px;
+        height: 80px;
+        transform: rotate(-30deg) skew(0deg, 30deg);
+        position: absolute;
+        top: 23px;
+        left: 75px;
+      }
+
+      .left-bottom {
+        width: 15px;
+        height: 103px;
+        position: absolute;
+        transform: rotate(40deg) skew(10deg, -40deg);
+        top: 40.5px;
+        left: 41px;
+      }
+
+      .bottom-bottom {
+        width: 118px;
+        height: 20px;
+        position: absolute;
+        transform: skew(-15deg);
+        top: 117px;
+        left: 30px;
+      }
+
+      .bottom-top {
+        width: 107px;
+        height: 20px;
+        transform: skew(28deg);
+        position: absolute;
+        top: 97px;
+        left: 37px;
+      }
+
+      .right-top {
+        width: 23px;
+        height: 124px;
+        transform: rotate(-30deg) skew(0deg, 30deg);
+        position: absolute;
+        top: 1px;
+        left: 94.5px;
+      }
+
+      .triangle:hover .light {
+        background-color: rgb(170, 170, 170);
+      }
+
+      .triangle:hover .middle {
+        background-color: rgb(238, 238, 238);
+      }
+
+      .triangle:hover .dark {
+        background-color: rgb(204, 204, 204);
+      }
+    </style>
+  </head>
+
+  <body>
+    <div class="box">
+      <div class="container">
+        <div class="triangle">
+          <div class="bottom-top middle"></div>
+          <div class="left-top light"></div>
+          <div class="left-bottom dark"></div>
+          <div class="right-bottom light"></div>
+          <div class="bottom-bottom dark"></div>
+          <div class="right-top middle"></div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

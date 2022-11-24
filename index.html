@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>CodePen - Lab-1</title>
+  </head>
+
+  <body>
+    <!-- partial:index.partial.html -->
+    <!DOCTYPE html>
+    <html>
+      <head>
+        <meta charset="utf-8" />
+        <style>
+          .myDiv {
+            border: 5px outset black;
+            background-color: lightblue;
+            text-align: center;
+          }
+
+          table,
+          th,
+          td {
+            border: 1px solid black;
+            border-collapse: collapse;
+          }
+
+          th,
+          td {
+            padding: 5px;
+            text-align: left;
+          }
+
+          .nav {
+            display: flex;
+            justify-content: center;
+            margin-top: 10px;
+            color: #636366;
+          }
+
+          .nav-item {
+            padding: 10px 20px 10px 20px;
+            text-decoration: none;
+            color: inherit;
+            font-weight: 700;
+            transition: all 1s;
+          }
+
+          .nav-item:hover {
+            background-color: #636366;
+            color: #f0f0f0;
+          }
+        </style>
+      </head>
+
+      <body>
+        <div class="myDiv">
+          <h2>This is Ricky's personal page</h2>
+          <h3>Student ID: 110303033</h3>
+          <b>Habits: Reading Books, Deutsch sprache, Musik Hören</b>
+          <br />
+          <i>
+            Brief Introduction:<br />
+            An accomplished, highly self-motivative, proper time managing
+            freshman skilled at building rapport with others,<br />maximizing
+            team synergy, and proficient crisis managing.<br />
+          </i>
+          <b>
+            <a href="mailto:lifeliver920114@gmail.com">
+              Email Address via Ricky
+            </a>
+          </b>
+        </div>
+        <div class="myDiv nav">
+          <a href="about.html" class="nav-item">about</a>
+          <a href="form.html" class="nav-item">form</a>
+          <a href="triangle.html" class="nav-item">triangle</a>
+          <a href="email.html" class="nav-item">sending-email</a>
+        </div>
+        <h1>Exercise 3</h1>
+        <table style="width: 100%">
+          <caption>
+            Table Merging Exercise two
+          </caption>
+          <thead>
+            <tr>
+              <th rowspan="2">
+                <img
+                  src="./assets/共基用.jpg"
+                  width="205s"
+                  alt="personal photo"
+                />
+              </th>
+              <th colspan="4">
+                <strong>Personal Info</strong>
+              </th>
+            </tr>
+            <tr>
+              <th>Student ID</th>
+              <th>Email address</th>
+              <th>Personal Phone</th>
+              <th>Habits</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <th>Ricky</th>
+              <td>110303033</td>
+              <td>
+                <a href="mailto:lifeliver920114@gmail.com">
+                  Email Address via Ricky
+                </a>
+              </td>
+              <td>0909151588</td>
+              <td>Reading Books, Deutsch sprache, Musik Hören</td>
+            </tr>
+          </tbody>
+        </table>
+        <!-- partial -->
+      </body>
+    </html>
+  </body>
+</html>
